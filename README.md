@@ -23,13 +23,16 @@ Setting up Tabletop
 Setting up Leaflet
 ===========
 * The data will then be sent to the startUpLeafet function. We will loop through the data and create variables for each column in the spreadsheet. In the js/script.js file, change lines 45 through 49 to match with the column names in your Google spreadsheet. NOTE: your numbers may be off by a few lines if you have more or less columns than the example table:
+	```javascript
 	var dataOne = tabletopData[num].brewery;
 	var dataTwo = tabletopData[num].address;
 	var dataThree = tabletopData[num].city;
 	var dataFour= tabletopData[num].phone;
 	var dataFive = tabletopData[num].website;
+	```
 
 * Similarily, we will scroll down to lines 63 to 70 (again, your numbers may be off) and change the text in popup variable to the names of your columns. So change 'Address', 'City', etc. to the appropriate column names:
+	```javascript
 	var popup = '<div class=popup_box' + 'id=' + num + '>';
     popup += '<div class='popup_box_header'><strong>' + dataOne + '</strong></div>';
     popup += '<hr />";
@@ -38,7 +41,7 @@ Setting up Leaflet
     popup += '<strong>Phone:</strong> ' + dataFour + '<br />';
     popup += '<strong>Website:</strong> ' + dataFive + '<br />';
     popup += '</div>";
-
+    ```
 
 
 Styling the map
