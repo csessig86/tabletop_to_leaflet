@@ -33,14 +33,14 @@ Setting up Leaflet
 
 * Similarily, we will scroll down to lines 63 to 70 (again, your numbers may be off) and change the text in popup variable to the names of your columns. So change 'Address', 'City', etc. to the appropriate column names:
 	```javascript
-	var popup = '<div class=popup_box' + 'id=' + num + '>';
-    popup += '<div class='popup_box_header'><strong>' + dataOne + '</strong></div>';
-    popup += '<hr />";
-    popup += '<strong>Address:</strong> ' + dataTwo + '<br />';
-    popup += '<strong>City:</strong> ' + dataThree + '<br />';
-    popup += '<strong>Phone:</strong> ' + dataFour + '<br />';
-    popup += '<strong>Website:</strong> ' + dataFive + '<br />';
-    popup += '</div>";
+	var popup = "<div class=popup_box" + "id=" + num + ">";
+    popup += "<div class='popup_box_header'><strong>" + dataOne + "</strong></div>";
+    popup += "<hr />";
+    popup += "<strong>Address:</strong> " + dataTwo + "<br />";
+    popup += "<strong>City:</strong> " + dataThree + "<br />";
+    popup += "<strong>Phone:</strong> " + dataFour + "<br />";
+    popup += "<strong>Website:</strong> " + dataFive + "<br />";
+    popup += "</div>";
     ```
 
 
