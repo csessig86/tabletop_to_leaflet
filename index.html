@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<head>
+	<title>Tabletop to Leaflet</title>
+	<meta charset="utf-8" />
+
+    <!-- Add these meta tags for mobile -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta http-equiv="cleartype" content="on">
+
+	<link rel="stylesheet" href="css/leaflet.css" />
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="css/font-awesome-ie7.min.css" />
+		<link rel="stylesheet" href="css/leaflet.ie.css" />
+	<![endif]-->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/leaflet.js"></script>
+	<script type="text/javascript" src="js/tabletop.js"></script>
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+    <noscript>
+		<div id="noscript_note">
+			You must have JavaScript enabled to view this page.
+		</div>
+	</noscript>
+
+	<div id="sidebar">
+		<div id="sidebar_header">
+			<h3>Tabletop to Leaflet</h3>
+		</div>
+	
+
+		<div id="share">
+        	<ul>
+            <li class="float_left">
+                <a data-text="" href="http://twitter.com/share" class="twitter-share-button"
+                    data-count="horizontal">Tweet</a>
+                <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+            </li>
+            <li class="float_left">
+                <g:plusone size="medium"></g:plusone>
+            </li>
+            <li>
+                <div id="fb-root"></div>
+                <script src="http://connect.facebook.net/en_US/all.js#appId=161694630579757&amp;xfbml=1"></script><fb:like href="" send="false" layout="button_count" width="90" show_faces="false" font="">
+                </fb:like>
+            </li>
+        	</ul>
+    	</div>
+
+		<div id="sidebar_content">
+			<p>This template pulls data from a <a href="https://docs.google.com/spreadsheet/pub?key=0As3JvOeYDO50dF9NWWRiaTdqNmdKQ1lCY3dpdDhZU3c&output=html" target="_blank">Google spreadsheet</a> and pushes it to a Leaflet map. The data we are using in this example is a list of breweries in Iowa.</p>
+			<p>The map template is responsive, meaning it works on screens both big and small.</p>
+			<p>It uses <a href="http://leafletjs.com/" target="_blank">Leaflet</a>, <a href="http://builtbybalance.com/Tabletop/" target="_blank">Tabletop</a> and <a href="http://twitter.github.io/bootstrap/" target="_blank">Bootstrap</a>.</p>
+			<p>If you have any questions, feel free to contact <a href="https://twitter.com/courieressig" target="_blank">Chris Essig</a>.</p>
+			<p>H/T to <a href="https://twitter.com/ChrisLKeller" target="_blank">Chris Keller</a> for his work on his Tabletop to DataTables <a href="https://github.com/chrislkeller/datafeed_to_datatables" target="_blank">template</a>.</p>
+    	</div>
+	</div>
+
+	<div class="toggle_description btn" type="button">
+		About this map
+	</div>
+
+	<div id="description_box">
+		<div class="x_button toggle_description btn btn-primary" type="button">
+			<strong>X</strong>
+		</div>
+		<div id="description_box_header"></div>
+		<div id="description_box_content"></div>
+	</div>
+
+	<div id="description_box_cover"></div>
+	<div id="map"></div>
+
+	<div id="credits">
+		<div id="credits_box">
+			<div id="credits_content">
+				<p>Interactive by: <a href="https://twitter.com/courieressig" target="_blank">Chris Essig</a> - 
+                Map powered by: <a href="http://leafletjs.com/" target="_blank">Leaflet</a> - Map data CCBYSA &copy; 2012 OpenStreetMap contributors, Imagery &copy; 2012 CloudMade</p>
+			</div>
+    	</div>
+    	<div id="toggle_credits" class="btn" type="button">Credits</div>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>

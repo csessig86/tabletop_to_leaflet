@@ -1,0 +1,303 @@
+/* Body */
+body {
+    padding-left: 0px;
+    padding-right: 0px;
+	margin: 0;
+    height: 100%;
+}
+
+html {
+	height: 100%;
+}
+
+
+/* Social links */
+#share ul {
+	margin: 0px;
+}
+
+#share li {
+	list-style: none;
+}
+
+.float_left {
+	float: left;
+}
+
+.social_links {
+	width: 100%;
+}
+
+
+/* Map */
+#map {
+	position: absolute;
+	float: left;
+	top: 1%;
+	height: 98%;
+	width: 100%;
+	z-index: 1;
+}
+
+
+/* Sidebar */
+#sidebar {
+	position: absolute;
+	top: 2%;
+	right: 1%;
+	height: 96%;
+	width: 30%;
+	z-index: 2;
+	border: 1px solid #999;
+	padding-left: 1%;
+	padding-right: 1%;
+	background-color: #FFFFFF;
+    background-color:rgba(255,255,255,0.9);
+}
+
+#sidebar h3 {
+	line-height: 30px;
+}
+
+#sidebar_content {
+	float: left;
+	width: 30%;
+	height: 70%;
+	position: fixed;
+	overflow: auto;
+	padding-top: 5px;
+}
+
+
+/* Pop-up information */
+.popup_box_header {
+    font-size: 16px;
+}
+
+hr {
+	margin: 5px 0 5px 0;
+}
+
+
+
+/* 'About this map' button, description box */
+/* Mobile only */
+.toggle_description {
+	display: none;
+	z-index: 8;
+	position: relative;
+	float: right;
+    right: 0%;
+    top: 0%;
+}
+
+#description_box_cover {
+	display: none;
+	z-index: 10;
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+    background-color: #444444;
+    background-color:rgba(44,44,44,0.9);
+}
+
+#description_box {
+	position: absolute;
+	display: none;
+	z-index: 11;
+	width: 92%;
+	height: 93%;
+	padding-top: 1%;
+	padding-left: 1%;
+    padding-right: 1%;
+    left: 2.5%;
+    top: 2.5%;
+    border: 1px solid #999;
+    background-color: #FFFFFF;
+    background-color:rgba(255,255,255,0.9);
+}
+
+#description_box h3 {
+	padding-bottom: 0px;
+	line-height: 15px;
+}
+
+#description_box_content {
+	width: 92%;
+	height: 80%;
+	position: fixed;
+	overflow: auto;
+}
+
+.x_button {
+	width: 15px;
+}
+
+
+/* 'Scroll more' text in description box */
+/* Only visible on wide screens */
+#scroll_more {
+	display: none;
+	color: #0088CC;
+	padding-bottom: 10px;
+}
+
+
+/* Credits */
+#credits_box {
+	display: none;
+}
+
+#credits {
+    z-index: 8;
+    position: absolute;
+	bottom: 1%;
+	right: auto;
+	left: 0;
+	width: 150px;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	background-color:rgba(255,255,255,0.9);
+}
+
+#credits p {
+	line-height: 15px;
+}
+
+#credits_content {
+	margin: 10px;
+}
+
+#toggle_credits {
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+	line-height: 30px;
+	width: 100%;
+}
+
+
+/* Leaflet zoom button */
+.leaflet-control-zoom a, .leaflet-control-zoom a:hover {
+    text-decoration: none;
+}
+
+
+/* Hide attribution and put in credits box */
+.leaflet-container .leaflet-control-attribution, .leaflet-container .leaflet-control-scale {
+	display: none;
+ }
+
+
+/* Styles from mobile devices */
+@media (max-width: 625px) {
+	/* Headers */
+	h1, h2, h3 {
+    	line-height: 20px;
+    	padding-bottom: 5px;
+	}
+
+	/* Map */
+	#map {
+		cursor: default;
+		border: 0px solid #737373;
+		top: 0%;
+		bottom: 0%;
+		height: 100%;
+		width: 100%;
+	}
+	
+
+	/* Hide social buttons */
+	#share {
+		display: none;
+	}
+	
+	
+	/* Sidebar */
+	#sidebar {
+		position: relative;
+		margin-top: 0%;
+		float: left;
+		left: 0%;
+		right: 0%;
+		top: 0%;
+		padding-left: 2%;
+		padding-right: 2%;
+		height: 35px;
+		width: 96.5%;
+	}
+
+	#sidebar h3 {
+    	line-height: 15px;
+	}
+
+	#sidebar_content {
+		display: none;
+	}
+
+	#credits {
+		display: none;
+	}
+
+	#sidebar h2, #description_box_header h2 {
+		font-size: 20px;
+	}
+
+
+	/* Description box information */
+	#description_box_header h3 {
+		line-height: 30px;
+	}
+
+	.toggle_description {
+		display: inline;
+	}
+
+	
+	/* Leaflet zoom control */
+	.leaflet-top {
+    	margin-top: 35px;
+	}
+
+	.leaflet-container .leaflet-control-zoom {
+    	margin: 5px;
+	}
+
+	.leaflet-bar {
+		box-shadow: 0 0 0 rgba(0,0,0,0.4);
+	}
+
+}
+
+
+/* Special attributes for small, wide screens */
+@media (max-height: 500px) {
+	/* Show scroll more text if width of screen is 500px > */
+	#scroll_more {
+		display: block;
+	}
+
+
+	/* Used for overflow text */
+	#description_box_content, #sidebar_content {
+		height: 55%;
+	}
+}
+
+
+/* Used for overflow text */
+@media (max-height: 400px) {
+	#description_box_content, #sidebar_content {
+		height: 45%;
+	}
+}
+
+
+/* Used for overflow text */
+@media (max-height: 300px) {
+	#description_box_content, #sidebar_content {
+		height: 30%;
+	}
+}
