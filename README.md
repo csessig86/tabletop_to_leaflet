@@ -1,5 +1,7 @@
 Tabletop to Leaflet
 ===========
+* [Live demo](wcfcourier.com/app/special/tabletop_to_leaflet)
+
 * Uses [Tabletop.js](http://builtbybalance.com/Tabletop/) and a [Google Spreadsheet](https://docs.google.com/spreadsheet/pub?key=0As3JvOeYDO50dF9NWWRiaTdqNmdKQ1lCY3dpdDhZU3c&output=html) to feed data to a [Leaflet](http://leafletjs.com/) map template.
 
 * The map template is responsive, meaning it works on screens both big and small.
@@ -13,8 +15,7 @@ Setting up Tabletop
 ===========
 * Follow the [Tabletop.js instructions](http://builtbybalance.com/Tabletop/#tabletop-instructions) for setting up the spreadsheet and publishing it.
 
-* Make sure your table includes columns titled 'latitude' and 'longitude' with lat, long values for each location. Leaflet needs these values to map our markers. Here's our example table:
-	https://docs.google.com/spreadsheet/pub?key=0As3JvOeYDO50dF9NWWRiaTdqNmdKQ1lCY3dpdDhZU3c&output=html
+* Make sure your table includes columns titled 'latitude' and 'longitude' with lat, long values for each location. Leaflet needs these values to map our markers. Click to view the [example table](https://docs.google.com/spreadsheet/pub?key=0As3JvOeYDO50dF9NWWRiaTdqNmdKQ1lCY3dpdDhZU3c&output=html)
 
 * Open up the js/script.js file and add your spreadsheet ID as a value to the spreadsheetKey key in the initializeTabletopObject. This is on line 19 of the file.
 	initializeTabletopObject('0As3JvOeYDO50dF9NWWRiaTdqNmdKQ1lCY3dpdDhZU3c');
@@ -48,4 +49,4 @@ Styling the map
 ===========
 * This example uses plain blue markers provided by Leaflet but plenty of options are available. For more, visit [their website](http://leafletjs.com/reference.html)
 
-* You also style the map's sidebar, header, buttons, etc. using the css/style.css file. Here's an example using a black template: http://wcfcourier.com/app/special/wloo_history/
+* You also style the map's sidebar, header, buttons, etc. using the css/style.css file. Here's an example using a [black template](http://wcfcourier.com/app/special/wloo_history/)
