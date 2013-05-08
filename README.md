@@ -1,6 +1,6 @@
 Tabletop to Leaflet
 ===========
-* [Live demo](wcfcourier.com/app/special/tabletop_to_leaflet)
+* [Live demo](http://wcfcourier.com/app/special/tabletop_to_leaflet)
 
 * Uses [Tabletop.js](http://builtbybalance.com/Tabletop/) and a [Google Spreadsheet](https://docs.google.com/spreadsheet/pub?key=0As3JvOeYDO50dF9NWWRiaTdqNmdKQ1lCY3dpdDhZU3c&output=html) to feed data to a [Leaflet](http://leafletjs.com/) map template.
 
