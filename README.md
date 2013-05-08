@@ -10,6 +10,8 @@ Tabletop to Leaflet
 
 * H/T to [Chris Keller](https://twitter.com/ChrisLKeller) for his work on his [Tabletop to DataTables template](https://github.com/chrislkeller/datafeed_to_datatables).
 
+* For more information, check out my [blog post](http://csessig.wordpress.com/2013/05/08/creating-responsive-maps-with-leaflet-google-docs/)
+
 
 Setting up Tabletop
 ===========
