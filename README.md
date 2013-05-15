@@ -52,3 +52,9 @@ Styling the map
 * This example uses plain blue markers provided by Leaflet but plenty of options are available. For more, visit [their website](http://leafletjs.com/reference.html)
 
 * You also style the map's sidebar, header, buttons, etc. using the css/style.css file. Here's an example using a [black template](http://wcfcourier.com/app/special/wloo_history/)
+
+
+
+Plugins
+===========
+* You can also use [Leaflet plugins](http://leafletjs.com/plugins.html‎) with the map. One example is the [Leaflet.markercluster plugin](https://github.com/Leaflet/Leaflet.markercluster), which clusters markers that are close together. You can see an example of this with the "index_cluster.html" file.
