@@ -30,7 +30,6 @@ function initializeTabletopObject(dataSpreadsheet){
     });
 }
 
-
 // This function gets our data from our spreadsheet
 // Then gets it ready for Leaflet.
 // It creates the marker, sets location
@@ -77,42 +76,28 @@ function startUpLeafet(tabletopData) {
 };
 
 
+
 // Toggle for 'About this map' and X buttons
 // Only visible on mobile
 isVisibleDescription = false;
 // Grab header, then content of sidebar
-sidebarHeader = $('#sidebar_header').html();
-sidebarContent = $('#sidebar_content').html();
+sidebarHeader = $('.sidebar_header').html();
+sidebarContent = $('.sidebar_content').html();
 // Then grab credit information
-creditsContent = $('#credits_content').html();
+creditsContent = $('.leaflet-control-attribution').html();
 $('.toggle_description').click(function() {
 	if (isVisibleDescription === false) {
-		$('#description_box_cover').show();
+		$('.description_box_cover').show();
 		// Add Sidebar header into our description box
 		// And 'Scroll to read more...' text on wide mobile screen
-		$('#description_box_header').html(sidebarHeader + '<div id="scroll_more"><strong>Scroll to read more...</strong></div>');
+		$('.description_box_header').html(sidebarHeader + '<div id="scroll_more"><strong>Scroll to read more...</strong></div>');
 		// Add the rest of our sidebar content, credit information
-		$('#description_box_content').html(sidebarContent + '<br />' + 'Credits:' + creditsContent);
-		$('#description_box').show();
+		$('.description_box_content').html(sidebarContent + '<br />' + 'Credits: ' + creditsContent);
+		$('.description_box').show();
 		isVisibleDescription = true;
 	} else {
-		$('#description_box').hide();
-		$('#description_box_cover').hide();
+		$('.description_box').hide();
+		$('.description_box_cover').hide();
 		isVisibleDescription = false;
-	}
-});
-
-
-// Toggles view/hide of credits
-// Only visible on desktop
-isVisibleDamage = true;
-$('#toggle_credits').click(function() {
-	$('#credits_box').slideToggle('slow');
-	if(isVisibleDamage){
-		$('#toggle_credits').html("Hide");
-		isVisibleDamage = false;
-	} else {
-		$('#toggle_credits').html("Credits");
-		isVisibleDamage = true;
 	}
 });
