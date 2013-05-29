@@ -1,17 +1,35 @@
 <!doctype html>
 <html lang="en">
-<head>
+<head prefix="og: http://wcfcourier.com/app/special/tabletop_to_leaflet/index_cluster.html">
 <head>
 	<title>Tabletop to Leaflet with marker clusters</title>
 	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
-    <!-- Add these meta tags for mobile -->
+    <!-- Mobile meta tags-->
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="MobileOptimized" content="320"/>
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta http-equiv="cleartype" content="on">
 
+	<!-- Facebook meta tags-->
+	<meta property="og:title" content="Tabletop to Leaflet"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="http://wcfcourier.com/app/special/tabletop_to_leaflet/index_cluster.html"/>
+	<meta property="og:image" content="http://wcfcourier.com/app/special/tabletop_to_leaflet/imgs/ss.jpg"/>
+	<meta property="og:site_name" content="WCFCourier"/>
+	<meta property="og:description" content="This template pulls data from a Google spreadsheet and pushes it to a Leaflet map. The data we are using in this example is a list of breweries in Iowa." />
+
+	<!-- Twitter meta tags -->
+	<meta property="twitter:site" content="@WCFCourier">
+	<meta property="twitter:card" content="Tabletop to Leaflet">
+	<meta property="twitter:url" content="http://wcfcourier.com/app/special/tabletop_to_leaflet/index_cluster.html">
+	<meta property="twitter:title" content="Tabletop to Leaflet">
+	<meta property="twitter:description" content="his template pulls data from a Google spreadsheet and pushes it to a Leaflet map. The data we are using in this example is a list of breweries in Iowa.">
+	<meta property="twitter:image" content="http://wcfcourier.com/app/special/tabletop_to_leaflet/imgs/ss.jpg">
+
+	<!-- CSS -->
 	<link rel="stylesheet" href="css/leaflet.css" />
 	<link rel="stylesheet" href="cluster_addons/MarkerCluster.css" />
 	<link rel="stylesheet" href="cluster_addons/MarkerCluster.Default.css" />
@@ -24,6 +42,7 @@
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+	<!-- Javascript -->
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/leaflet.js"></script>
 	<script type="text/javascript" src="cluster_addons/leaflet.markercluster-src.js"></script>
@@ -37,7 +56,7 @@
 	</noscript>
 
 	<div id="sidebar">
-		<div id="sidebar_header">
+		<div class="sidebar_header">
 			<h3>Tabletop to Leaflet</h3>
 		</div>
 	
@@ -60,7 +79,7 @@
         	</ul>
     	</div>
 
-		<div id="sidebar_content">
+		<div class="sidebar_content">
 			<p>This template pulls data from a <a href="https://docs.google.com/spreadsheet/pub?key=0As3JvOeYDO50dF9NWWRiaTdqNmdKQ1lCY3dpdDhZU3c&output=html" target="_blank">Google spreadsheet</a> and pushes it to a Leaflet map. The data we are using in this example is a list of breweries in Iowa.</p>
 			<p>The map template is responsive, meaning it works on screens both big and small.</p>
 			<p>It uses <a href="http://leafletjs.com/" target="_blank">Leaflet</a>, <a href="http://builtbybalance.com/Tabletop/" target="_blank">Tabletop</a> and <a href="http://twitter.github.io/bootstrap/" target="_blank">Bootstrap</a>.</p>
@@ -75,26 +94,19 @@
 		About this map
 	</div>
 
-	<div id="description_box">
+	<div class="description_box">
 		<div class="x_button toggle_description btn btn-primary" type="button">
 			<strong>X</strong>
 		</div>
-		<div id="description_box_header"></div>
-		<div id="description_box_content"></div>
+		<div class="description_box_header"></div>
+		<div class="description_box_content">
+			<div class="description_box_text"></div>
+			<div id="caption_box"></div>
+		</div>
 	</div>
+	<div class="description_box_cover"></div>
 
-	<div id="description_box_cover"></div>
 	<div id="map"></div>
-
-	<div id="credits">
-		<div id="credits_box">
-			<div id="credits_content">
-				<p>Interactive by: <a href="https://twitter.com/courieressig" target="_blank">Chris Essig</a> - 
-                Map powered by: <a href="http://leafletjs.com/" target="_blank">Leaflet</a> - Map data CCBYSA &copy; 2012 OpenStreetMap contributors, Imagery &copy; 2012 CloudMade</p>
-			</div>
-    	</div>
-    	<div id="toggle_credits" class="btn" type="button">Credits</div>
-	</div>
 
 	<script src="js/script_cluster.js"></script>
 </body>

@@ -57,7 +57,7 @@ a {
 
 
 /* Sidebar */
-.sidebar {
+#sidebar {
 	position: absolute;
 	top: 2%;
 	right: 1%;
@@ -71,7 +71,7 @@ a {
 	z-index: 10;
 }
 
-.sidebar h2 {
+#sidebar h2 {
 	float: left;
 }
 
@@ -136,7 +136,6 @@ hr {
     padding-left: 1%;
     padding-right: 1%;
     padding-top: 1%;
-    left: 1%;
     top: 1%;
     background-color: #FFFFFF;
 	background-color:rgba(255, 255, 255,0.9);
@@ -159,7 +158,8 @@ hr {
 	width: 15px;
 }
 
-.caption_box {
+/* Caption box in description box */
+#caption_box {
 	font-size: 12px;
 	font-style: italic;
 }
@@ -193,7 +193,8 @@ hr {
     z-index: 8;
 }
 
-/* Styles for small screens */
+
+/* Styles for smaller screens */
 @media (max-width: 700px) {
 	h2 {
 		font-size: 24px;
@@ -234,7 +235,7 @@ hr {
 	
 	
 	/* Sidebar */
-	.sidebar {
+	#sidebar {
 		position: relative;
 		border-width: 0 0 1px;
 		border-bottom: 1px solid #FFFFFF;
@@ -249,17 +250,17 @@ hr {
 		height: auto;
 	}
 
-	.sidebar h3 {
+	#sidebar h3 {
     	line-height: 15px;
     	font-size: 20px;
 	}
 
-	.description_box_header h3 {
-		line-height: 25px;
-	}
-
 	.sidebar_content {
 		display: none;
+	}
+
+	.description_box_header h3 {
+		line-height: 25px;
 	}
 
 	.toggle_description {
@@ -283,12 +284,6 @@ hr {
 	.leaflet-bar {
 		box-shadow: 0 0 0 rgba(0,0,0,0.4);
 	}
-
-
-	/* Credits */
-	#credits {
-		display: inline;
-	}
 }
 
 
@@ -308,11 +303,15 @@ hr {
 }
 
 @media (max-height: 400px) {
-	.sidebar_content {
-		height: 55%;
+	#scroll_more {
+		display: block;
 	}
 
-	.description_box_content, .img_box_content {
+	.sidebar_content {
+		height: 60%;
+	}
+
+	.description_box_content {
 		height: 75%;
 	}
 }

@@ -92,7 +92,8 @@ $('.toggle_description').click(function() {
 		// And 'Scroll to read more...' text on wide mobile screen
 		$('.description_box_header').html(sidebarHeader + '<div id="scroll_more"><strong>Scroll to read more...</strong></div>');
 		// Add the rest of our sidebar content, credit information
-		$('.description_box_content').html(sidebarContent + '<br />' + 'Credits: ' + creditsContent);
+		$('.description_box_text').html(sidebarContent + '<br />');
+		$('#caption_box').html('Credits: ' + creditsContent);
 		$('.description_box').show();
 		isVisibleDescription = true;
 	} else {
