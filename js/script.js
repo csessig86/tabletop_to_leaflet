@@ -5,11 +5,11 @@ if ($(window).width() < 626) {
 	var map = new L.Map('map').setView([42,-91.5],7);
 }
 
-// Information for the base tile via Cloudmade
-var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/f14689c8008d43da9028a70e6a8e710a/2402/256/{z}/{x}/{y}.png'
-var cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18});
+// Information for the base tile via OSM
+var tileUrl = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png'
+var tiles = new L.TileLayer(tileUrl, {maxZoom: 18});
 // Add to map
-map.addLayer(cloudmade);
+map.addLayer(tiles);
 
 
 // Here's the Tabletop feed
