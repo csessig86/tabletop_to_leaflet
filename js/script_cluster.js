@@ -31,10 +31,6 @@ function initializeTabletopObject(dataSpreadsheet){
 }
 
 
-// Set up our marker cluster group
-var markers = new L.MarkerClusterGroup();
-
-
 // This function gets our data from our spreadsheet
 // Then gets it ready for Leaflet.
 // It creates the marker, sets location

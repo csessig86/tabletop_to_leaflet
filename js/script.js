@@ -1,5 +1,11 @@
 // Group we will append our markers to
-var markers = new L.LayerGroup();
+if (window.location.hash === "#cluster") {
+	// Set up cluster group
+	var markers = new L.MarkerClusterGroup();
+} else {
+	// Otherwise set up normal groupx`
+	var markers = new L.LayerGroup();
+}
 
 // Google Docs spreadsheet key
 var spreadsheet_key = '0As3JvOeYDO50dF9NWWRiaTdqNmdKQ1lCY3dpdDhZU3c';
