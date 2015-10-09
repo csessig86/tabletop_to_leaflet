@@ -6,13 +6,11 @@ Tabletop to Leaflet
 
 * Uses [Tabletop.js](http://builtbybalance.com/Tabletop/) and a [Google Spreadsheet](https://docs.google.com/spreadsheet/pub?key=0As3JvOeYDO50dF9NWWRiaTdqNmdKQ1lCY3dpdDhZU3c&output=html) to feed data to a [Leaflet](http://leafletjs.com/) map template.
 
-* The map template is responsive, meaning it works on screens both big and small.
+* The map template is responsive.
 
 * Besides Tabletop.js and Leaflet, the template utilizes the [Bootstrap](http://twitter.github.io/bootstrap/) framework.
 
 * H/T to [Chris Keller](https://twitter.com/ChrisLKeller) for his work on his [Tabletop to DataTables template](https://github.com/chrislkeller/datafeed_to_datatables).
-
-* For more information, check out my [blog post](http://csessig.wordpress.com/2013/05/08/creating-responsive-maps-with-leaflet-google-docs/).
 
 
 Setting up Tabletop
