@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head prefix="og: http://wcfcourier.com/app/special/tabletop_to_leaflet/">
+<head prefix="og: ">
 <head>
 <head>
 	<title>Tabletop to Leaflet</title>
@@ -17,34 +17,30 @@
 	<!-- Facebook meta tags-->
 	<meta property="og:title" content="Tabletop to Leaflet"/>
 	<meta property="og:type" content="website"/>
-	<meta property="og:url" content="http://wcfcourier.com/app/special/tabletop_to_leaflet/"/>
-	<meta property="og:image" content="http://wcfcourier.com/app/special/tabletop_to_leaflet/imgs/ss.jpg"/>
-	<meta property="og:site_name" content="WCFCourier"/>
+	<meta property="og:url" content=""/>
+	<meta property="og:image" content="/imgs/ss.jpg"/>
+	<meta property="og:site_name" content=""/>
 	<meta property="og:description" content="This template pulls data from a Google spreadsheet and pushes it to a Leaflet map. The data we are using in this example is a list of breweries in Iowa." />
 
 	<!-- Twitter meta tags -->
-	<meta property="twitter:site" content="@WCFCourier">
+	<meta property="twitter:site" content="">
 	<meta property="twitter:card" content="Tabletop to Leaflet">
-	<meta property="twitter:url" content="http://wcfcourier.com/app/special/tabletop_to_leaflet/">
+	<meta property="twitter:url" content="">
 	<meta property="twitter:title" content="Tabletop to Leaflet">
 	<meta property="twitter:description" content="his template pulls data from a Google spreadsheet and pushes it to a Leaflet map. The data we are using in this example is a list of breweries in Iowa.">
-	<meta property="twitter:image" content="http://wcfcourier.com/app/special/tabletop_to_leaflet/imgs/ss.jpg">
+	<meta property="twitter:image" content="">
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="css/leaflet.css" />
-	<!--[if lte IE 8]>
-		<link rel="stylesheet" href="css/leaflet.ie.css" />
-	<![endif]-->
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" href="css/lib/leaflet-0.75.css" />
+	<link rel="stylesheet" href="css/lib/bootstrap.min-3.3.5.css" />
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 	<!-- Javascript -->
-	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="js/leaflet.js"></script>
-	<script type="text/javascript" src="js/tabletop.js"></script>
-    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+	<script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/lib/leaflet-0.75.js"></script>
+	<script type="text/javascript" src="/js/lib/tile.stamen-1.3.0.js"></script>
+	<script type="text/javascript" src="js/lib/tabletop-1.4.2.js"></script>
 
     <noscript>
 		<div id="noscript_note">
@@ -64,9 +60,6 @@
                 <a data-text="" href="http://twitter.com/share" class="twitter-share-button"
                     data-count="horizontal">Tweet</a>
                 <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-            </li>
-            <li class="float_left">
-                <g:plusone size="medium"></g:plusone>
             </li>
             <li>
                 <div id="fb-root"></div>
@@ -103,6 +96,8 @@
 	
 	<div id="map"></div>
 
+	<script src="js/base.js"></script>
+	<script src="js/base-map.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
