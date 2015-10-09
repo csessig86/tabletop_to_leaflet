@@ -57,4 +57,4 @@ Styling the map
 
 Plugins
 ===========
-* You can also use [Leaflet plugins](http://leafletjs.com/plugins.html‎) with the map. One example is the [Leaflet.markercluster plugin](https://github.com/Leaflet/Leaflet.markercluster), which clusters markers that are close together. You can see an example of this with the "index_cluster.html" file. A live example can be viewed by [clicking here](http://wcfcourier.com/app/special/tabletop_to_leaflet/index_cluster.html).
+* You can also use [Leaflet plugins](http://leafletjs.com/plugins.html‎) with the map. One example is the [Leaflet.markercluster plugin](https://github.com/Leaflet/Leaflet.markercluster), which clusters markers that are close together. You can see an example of this [here](http://wcfcourier.com/app/special/tabletop_to_leaflet/index_cluster.html).
